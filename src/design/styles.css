@@ -38,4 +38,44 @@
   transform: scaleX(1);
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__container {
+  flex: 1;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000000;
+  padding: 10px;
+  color: white;
+}
+.footer__name {
+  font-family: "Playwrite CU", sans-serif;
+  font-size: 20px;
+}
+.footer__copyright {
+  font-size: 17px;
+  font-style: italic;
+}
+.footer__info {
+  font-size: 18px;
+}
+.footer__info a {
+  color: white;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000000;
+  padding: 10px;
+  color: white;
+  &__name {
+    font-family: "Playwrite CU", sans-serif;
+    font-size: 20px;
+  }
+  &__copyright {
+    font-size: 17px;
+    font-style: italic;
+  }
+  &__info {
+    font-size: 18px;
+    & a {
+      color: white;
+    }
+  }
+}
