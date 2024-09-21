@@ -12,4 +12,26 @@ body {
 
 .main__container {
   flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    margin-top: 120px;
+    font-family: "Oswald", sans-serif;
+    font-size: 10px;
+    transition: font-size 2s ease-in-out;
+    opacity: 0;
+    transition: font-size 2s ease-in-out, opacity 1.5s ease-in-out;
+  }
+
+  .animate-h2 {
+    font-size: 45px; // Taille finale
+    opacity: 1;
+  }
+  & .first__paragraphe {
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: "Playpen Sans", sans-serif;
+  }
 }
