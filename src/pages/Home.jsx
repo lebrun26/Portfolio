@@ -26,7 +26,7 @@ const Home = () => {
         <Header />
       </header>
       <main className="main__container">
-        <h2 className={animate ? "animate-h2" : ""}>
+        <h2 className={`title__home ${animate ? "animate-h2" : ""}`}>
           Bienvenue sur le Portfolio de Patrick Le Brun
         </h2>
 

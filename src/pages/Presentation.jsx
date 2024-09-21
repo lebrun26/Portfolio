@@ -10,7 +10,9 @@ const Presentation = () => {
         <Header />
       </header>
 
-      <main className="main__container">{/* Ton contenu ici */}</main>
+      <main className="main__container">
+        <h2 className="main__title">Présentation</h2>
+      </main>
 
       <footer className="footer">
         <Footer />

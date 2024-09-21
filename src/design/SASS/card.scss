@@ -6,20 +6,16 @@
   gap: 15px;
   margin-top: 30px;
   .card {
-    background: linear-gradient(
-      180deg,
-      #ffffff,
-      #f0f0f0
-    ); // Dégradé du blanc au gris clair
+    background: linear-gradient(180deg, #ffffff, #f0f0f0);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Légère ombre portée
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 250px; // Largeur de la carte
-    transition: transform 0.3s ease; // Animation lors du survol
+    width: 250px;
+    transition: transform 0.3s ease;
 
     &:hover {
-      transform: scale(1.05); // Zoom léger lors du survol
+      transform: scale(1.05);
     }
 
     h3 {
@@ -30,8 +26,8 @@
     }
 
     .card__logo {
-      width: 85px; // Taille du logo
-      height: auto; // Garde les proportions
+      width: 85px;
+      height: auto;
       object-fit: cover;
     }
   }
