@@ -74,7 +74,15 @@ body {
   font-family: "Playpen Sans", sans-serif;
 }
 
-.card {
+.container__techno {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+  gap: 15px;
+  margin-top: 30px;
+}
+.container__techno .card {
   background: linear-gradient(180deg, #ffffff, #f0f0f0);
   padding: 20px;
   border-radius: 10px;
@@ -83,17 +91,19 @@ body {
   width: 250px;
   transition: transform 0.3s ease;
 }
-.card:hover {
+.container__techno .card:hover {
   transform: scale(1.05);
 }
-.card h3 {
-  font-size: 1.5rem;
+.container__techno .card h3 {
+  font-family: "Playpen Sans", sans-serif;
+  font-size: 22px;
   margin-bottom: 15px;
   color: #333;
 }
-.card .card__logo {
-  width: 80px;
+.container__techno .card .card__logo {
+  width: 85px;
   height: auto;
+  object-fit: cover;
 }
 
 .footer {

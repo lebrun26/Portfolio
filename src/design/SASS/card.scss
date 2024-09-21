@@ -1,28 +1,38 @@
-.card {
-  background: linear-gradient(
-    180deg,
-    #ffffff,
-    #f0f0f0
-  ); // Dégradé du blanc au gris clair
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Légère ombre portée
-  text-align: center;
-  width: 250px; // Largeur de la carte
-  transition: transform 0.3s ease; // Animation lors du survol
+.container__techno {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+  gap: 15px;
+  margin-top: 30px;
+  .card {
+    background: linear-gradient(
+      180deg,
+      #ffffff,
+      #f0f0f0
+    ); // Dégradé du blanc au gris clair
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Légère ombre portée
+    text-align: center;
+    width: 250px; // Largeur de la carte
+    transition: transform 0.3s ease; // Animation lors du survol
 
-  &:hover {
-    transform: scale(1.05); // Zoom léger lors du survol
-  }
+    &:hover {
+      transform: scale(1.05); // Zoom léger lors du survol
+    }
 
-  h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #333;
-  }
+    h3 {
+      font-family: "Playpen Sans", sans-serif;
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #333;
+    }
 
-  .card__logo {
-    width: 80px; // Taille du logo
-    height: auto; // Garde les proportions
+    .card__logo {
+      width: 85px; // Taille du logo
+      height: auto; // Garde les proportions
+      object-fit: cover;
+    }
   }
 }
