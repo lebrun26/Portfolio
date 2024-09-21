@@ -1,4 +1,23 @@
-.main__title {
-  display: flex;
-  justify-content: center;
+.main__container {
+  .main__container__title {
+    display: flex;
+    justify-content: center;
+    font-size: 42px;
+    font-family: "Oswald", sans-serif;
+  }
+  &__parcours {
+    border: 3px solid;
+    padding: 10px;
+    &__title {
+      margin-top: 5px;
+      font-size: 25px;
+      font-family: "Oswald", sans-serif;
+    }
+    &__paragraphe {
+      font-family: "Playpen Sans", sans-serif;
+      &__style__date {
+        text-decoration: underline;
+      }
+    }
+  }
 }

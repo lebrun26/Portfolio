@@ -77,6 +77,7 @@ body {
 .container__techno {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   width: 50%;
   gap: 15px;
@@ -106,9 +107,26 @@ body {
   object-fit: cover;
 }
 
-.main__title {
+.main__container .main__container__title {
   display: flex;
   justify-content: center;
+  font-size: 42px;
+  font-family: "Oswald", sans-serif;
+}
+.main__container__parcours {
+  border: 3px solid;
+  padding: 10px;
+}
+.main__container__parcours__title {
+  margin-top: 5px;
+  font-size: 25px;
+  font-family: "Oswald", sans-serif;
+}
+.main__container__parcours__paragraphe {
+  font-family: "Playpen Sans", sans-serif;
+}
+.main__container__parcours__paragraphe__style__date {
+  text-decoration: underline;
 }
 
 .footer {
