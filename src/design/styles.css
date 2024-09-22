@@ -107,14 +107,25 @@ body {
   object-fit: cover;
 }
 
-.main__container .main__container__title {
+.main__container {
+  gap: 25px;
+  margin-bottom: 40px;
+}
+.main__container__title {
   display: flex;
   justify-content: center;
   font-size: 42px;
   font-family: "Oswald", sans-serif;
+  margin-top: 90px;
+}
+.main__container__formation {
+  padding: 40px;
+}
+.main__container__formation__paragraphe {
+  font-family: "Playpen Sans", sans-serif;
+  font-size: 20px;
 }
 .main__container__parcours {
-  border: 3px solid;
   padding: 10px;
 }
 .main__container__parcours__title {
@@ -128,6 +139,55 @@ body {
 .main__container__parcours__paragraphe__style__date {
   text-decoration: underline;
 }
+.main__container__future {
+  padding: 40px;
+}
+.main__container__future__paragraphe {
+  font-family: "Playpen Sans", sans-serif;
+  font-size: 28px;
+}
+
+.card__presentation {
+  width: 52%;
+  height: 492px;
+  perspective: 1600px;
+  padding: 10px;
+}
+.card__presentation .card__presentation__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+.card__presentation .card__presentation__inner.flipped {
+  transform: rotateY(180deg);
+}
+.card__presentation .card__presentation__inner__front, .card__presentation .card__presentation__inner__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 10px;
+  box-shadow: 0 11px 3px rgba(0, 0, 0, 0.1);
+}
+.card__presentation .card__presentation__inner__front {
+  background-color: #080808;
+  color: white;
+}
+.card__presentation .card__presentation__inner__front .title__cards {
+  font-size: 50px;
+  font-family: "Oswald", sans-serif;
+}
+.card__presentation .card__presentation__inner__back {
+  background-color: #8e9290;
+  color: white;
+  transform: rotateY(180deg);
+}
 
 .footer {
   display: flex;
@@ -137,6 +197,7 @@ body {
   background-color: #000000;
   padding: 10px;
   color: white;
+  margin-top: 15px;
 }
 .footer__name {
   font-family: "Playwrite CU", sans-serif;

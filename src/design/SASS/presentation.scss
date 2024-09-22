@@ -1,12 +1,21 @@
 .main__container {
-  .main__container__title {
+  gap: 25px;
+  margin-bottom: 40px;
+  &__title {
     display: flex;
     justify-content: center;
     font-size: 42px;
     font-family: "Oswald", sans-serif;
+    margin-top: 90px;
+  }
+  &__formation {
+    padding: 40px;
+    &__paragraphe {
+      font-family: "Playpen Sans", sans-serif;
+      font-size: 20px;
+    }
   }
   &__parcours {
-    border: 3px solid;
     padding: 10px;
     &__title {
       margin-top: 5px;
@@ -18,6 +27,13 @@
       &__style__date {
         text-decoration: underline;
       }
+    }
+  }
+  &__future {
+    padding: 40px;
+    &__paragraphe {
+      font-family: "Playpen Sans", sans-serif;
+      font-size: 28px;
     }
   }
 }
