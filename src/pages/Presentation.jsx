@@ -104,7 +104,7 @@ const Presentation = () => {
 
         {/* Mon future */}
         <Cards_presentation
-          title="Mon future"
+          title="Mon futur"
           text={
             <div className="main__container__future">
               <p className="main__container__future__paragraphe">
