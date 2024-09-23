@@ -1,4 +1,7 @@
 .main__container {
+  &__contact__title {
+    font-family: "Oswald", sans-serif;
+  }
   &__contact__paragraphe {
     border: 2px solid;
     border-radius: 15px;
@@ -11,5 +14,8 @@
       font-size: 25px;
       font-family: "Playpen Sans", sans-serif;
     }
+  }
+  &__contact__form {
+    width: 31%;
   }
 }

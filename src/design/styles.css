@@ -267,6 +267,9 @@ body {
   object-fit: contain;
 }
 
+.main__container__contact__title {
+  font-family: "Oswald", sans-serif;
+}
 .main__container__contact__paragraphe {
   border: 2px solid;
   border-radius: 15px;
@@ -280,6 +283,9 @@ body {
   font-size: 25px;
   font-family: "Playpen Sans", sans-serif;
 }
+.main__container__contact__form {
+  width: 31%;
+}
 
 .contact-form {
   background-color: #f5f5f5;
@@ -292,6 +298,11 @@ body {
 .contact-form .form-group {
   margin-bottom: 15px;
 }
+.contact-form .form-group-title {
+  text-align: center;
+  font-size: 23px;
+  margin: 0 0 35px 0;
+}
 .contact-form .form-group label {
   display: block;
   font-size: 1rem;
@@ -300,7 +311,7 @@ body {
 }
 .contact-form .form-group input,
 .contact-form .form-group textarea {
-  width: 100%;
+  width: 95%;
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #ccc;

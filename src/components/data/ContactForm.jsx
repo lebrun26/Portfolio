@@ -23,7 +23,12 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs
-      .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData, "YOUR_USER_ID")
+      .send(
+        "service_i80x9ro",
+        "template_2jtpmo5",
+        formData,
+        "gPw-OVN7dqgKBeodm"
+      )
       .then(() => {
         setStatusMessage("Votre message a été envoyé avec succès !");
         setIsError(false);
@@ -49,6 +54,7 @@ const ContactForm = () => {
     <div>
       <form className="contact-form" onSubmit={sendEmail}>
         <div className="form-group">
+          <h3 className="form-group-title">Formulaire de contact</h3>
           <label htmlFor="firstName" className="firstName_font">
             Prénom
           </label>
