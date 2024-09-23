@@ -1,0 +1,15 @@
+.main__container {
+  &__contact__paragraphe {
+    border: 2px solid;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    &__police {
+      margin: 3px;
+      font-size: 25px;
+      font-family: "Playpen Sans", sans-serif;
+    }
+  }
+}
