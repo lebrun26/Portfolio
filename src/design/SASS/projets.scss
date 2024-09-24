@@ -21,3 +21,43 @@
     }
   }
 }
+
+// Responsive tablet
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main__container {
+    h2 {
+      font-size: 30px;
+    }
+    &__intro {
+      width: 70%;
+      &__github {
+        img {
+          width: 24%;
+        }
+      }
+    }
+    & h2 {
+      font-size: 34px;
+    }
+  }
+}
+
+// Responsive Phone
+@media (max-width: 768px) {
+  .main__container {
+    h2 {
+      font-size: 26px;
+    }
+    &__intro {
+      width: 80%;
+      &__github {
+        img {
+          width: 24%;
+        }
+      }
+    }
+    & h2 {
+      font-size: 30px;
+    }
+  }
+}

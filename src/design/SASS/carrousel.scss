@@ -18,7 +18,7 @@
 
     img {
       width: 100%;
-      height: 450px;
+      height: 583px;
       object-fit: cover;
     }
 
@@ -61,6 +61,38 @@
       width: auto;
       height: 35px;
       object-fit: contain;
+    }
+  }
+}
+
+// Responsive tablet
+@media (min-width: 769px) and (max-width: 1024px) {
+  .carousel {
+    &__content {
+      img {
+        height: 352px;
+      }
+    }
+    &__github {
+      img {
+        height: 26px;
+      }
+    }
+  }
+}
+
+// Responsive Phone
+@media (max-width: 768px) {
+  .carousel {
+    &__content {
+      img {
+        height: 239px;
+      }
+    }
+    &__github {
+      img {
+        height: 26px;
+      }
     }
   }
 }
