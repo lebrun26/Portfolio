@@ -5,7 +5,6 @@
   justify-content: space-between;
   padding: 25px 70px 0px 60px;
 
-  // Styliser le titre h1
   & a {
     text-decoration: none;
     & h1 {
@@ -14,7 +13,6 @@
     }
   }
 
-  // Navigation - Styles par défaut (pour les grands écrans)
   nav {
     display: flex;
     gap: 15px;
@@ -67,6 +65,9 @@
       & h1 {
         font-size: 22px;
       }
+    }
+    & nav {
+      font-size: 18px;
     }
   }
   nav {
