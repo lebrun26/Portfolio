@@ -488,4 +488,16 @@ body {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .footer__name {
+    font-size: 13px;
+  }
+  .footer__copyright {
+    font-size: 13px;
+  }
+  .footer__info {
+    font-size: 13px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
