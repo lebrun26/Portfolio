@@ -458,21 +458,46 @@ body {
   flex-direction: column;
   text-align: center;
   padding: 10px;
+  width: 65%;
+  margin-bottom: 45px;
 }
 .main__container__contact__paragraphe__police {
   margin: 3px;
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Playpen Sans", sans-serif;
 }
 .main__container__contact__form {
-  width: 31%;
+  width: 42%;
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main__container__contact__paragraphe {
+    width: 87%;
+    margin-bottom: 35px;
+  }
+  .main__container__contact__paragraphe__police {
+    font-size: 20px;
+  }
+  .main__container__contact__form {
+    width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  .main__container__contact__paragraphe {
+    width: 87%;
+    margin-bottom: 35px;
+  }
+  .main__container__contact__paragraphe__police {
+    font-size: 15px;
+  }
+  .main__container__contact__form {
+    width: 75%;
+  }
+}
 .contact-form {
   background-color: #f5f5f5;
   padding: 20px;
   border-radius: 10px;
-  max-width: 500px;
   margin: 0 auto;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
