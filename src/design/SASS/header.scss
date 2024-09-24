@@ -1,4 +1,11 @@
 .Header__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 70px 0px 60px;
+
+  // Styliser le titre h1
   & a {
     text-decoration: none;
     & h1 {
@@ -7,13 +14,8 @@
     }
   }
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 25px 70px 0px 60px;
-
-  & nav {
+  // Navigation - Styles par défaut (pour les grands écrans)
+  nav {
     display: flex;
     gap: 15px;
     font-size: 23px;
@@ -38,6 +40,81 @@
 
       &:hover::after {
         transform: scaleX(1);
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .Header__container {
+    padding: 25px 70px 0px 35px;
+    & a {
+      & h1 {
+        font-size: 22px;
+      }
+    }
+    & nav {
+      font-size: 20px;
+    }
+  }
+}
+
+// Responsive Phone
+@media (max-width: 768px) {
+  .Header__container {
+    padding: 12px 28px 0px 28px;
+    & a {
+      & h1 {
+        font-size: 22px;
+      }
+    }
+  }
+  nav {
+    display: none;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 27%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: top 1s ease;
+
+    &.open {
+      display: flex;
+      top: 0;
+    }
+  }
+
+  .burger__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 10;
+
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 100%;
+      height: 3px;
+      background-color: black;
+      transition: all 0.3s ease;
+    }
+
+    &.open {
+      .bar1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+      .bar2 {
+        opacity: 0;
+      }
+      .bar3 {
+        transform: rotate(45deg) translate(-5px, -6px);
       }
     }
   }

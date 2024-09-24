@@ -35,3 +35,31 @@ body {
     font-family: "Playpen Sans", sans-serif;
   }
 }
+
+// Responsive tablet
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main__container {
+    .animate-h2 {
+      font-size: 30px;
+    }
+    .first__paragraphe {
+      font-size: 15px;
+      text-align: center;
+      width: 75%;
+    }
+  }
+}
+
+// Responsive Phone
+
+@media (max-width: 768px) {
+  .main__container {
+    .title__home {
+      font-size: 20px;
+    }
+    .first__paragraphe {
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+}

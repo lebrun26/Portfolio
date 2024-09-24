@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  width: 50%;
+  width: 40%;
   gap: 15px;
   margin-top: 30px;
   .card {
@@ -12,7 +12,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 250px;
+    width: 30%;
     transition: transform 0.3s ease;
 
     &:hover {
@@ -27,9 +27,28 @@
     }
 
     .card__logo {
-      width: 85px;
+      width: 47%;
       height: auto;
       object-fit: cover;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container__techno {
+    width: 46%;
+    .card {
+      width: 36%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container__techno {
+    width: 92%;
+    gap: 20px;
+    .card {
+      width: 26%;
     }
   }
 }
