@@ -37,3 +37,35 @@
     }
   }
 }
+
+// Responsive tablet
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main__container {
+    &__formation {
+      &__paragraphe {
+        font-size: 16px;
+      }
+    }
+    &__future {
+      &__paragraphe {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+// Responsive Phone
+@media (max-width: 768px) {
+  .main__container {
+    &__formation {
+      &__paragraphe {
+        font-size: 12px;
+      }
+    }
+    &__future {
+      &__paragraphe {
+        font-size: 18px;
+      }
+    }
+  }
+}

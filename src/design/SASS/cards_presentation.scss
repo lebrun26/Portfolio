@@ -45,3 +45,33 @@
     transform: rotateY(180deg);
   }
 }
+
+// Responsive tablet
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card__presentation {
+    width: 80%;
+    .card__presentation__inner {
+      &__back {
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+// Responsive Phone
+@media (max-width: 768px) {
+  .card__presentation {
+    width: 82%;
+    height: 365px;
+    .card__presentation__inner {
+      &__back {
+        font-size: 13px;
+      }
+      &__front {
+        .title__cards {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+}

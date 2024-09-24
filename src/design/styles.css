@@ -248,6 +248,22 @@ body {
   font-size: 28px;
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main__container__formation__paragraphe {
+    font-size: 16px;
+  }
+  .main__container__future__paragraphe {
+    font-size: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .main__container__formation__paragraphe {
+    font-size: 12px;
+  }
+  .main__container__future__paragraphe {
+    font-size: 18px;
+  }
+}
 .card__presentation {
   width: 52%;
   height: 492px;
@@ -290,6 +306,26 @@ body {
   transform: rotateY(180deg);
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card__presentation {
+    width: 80%;
+  }
+  .card__presentation .card__presentation__inner__back {
+    font-size: 17px;
+  }
+}
+@media (max-width: 768px) {
+  .card__presentation {
+    width: 82%;
+    height: 365px;
+  }
+  .card__presentation .card__presentation__inner__back {
+    font-size: 13px;
+  }
+  .card__presentation .card__presentation__inner__front .title__cards {
+    font-size: 36px;
+  }
+}
 .main__container h2 {
   font-size: 40px;
 }
