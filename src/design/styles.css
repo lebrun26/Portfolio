@@ -152,7 +152,6 @@ body {
 @media (max-width: 768px) {
   .main__container .title__home {
     font-size: 20px;
-    text-align: center;
   }
   .main__container .first__paragraphe {
     font-size: 13px;
