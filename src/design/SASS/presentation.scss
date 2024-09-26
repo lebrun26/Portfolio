@@ -58,13 +58,14 @@
 @media (max-width: 768px) {
   .main__container {
     &__formation {
+      padding: 0px 8px;
       &__paragraphe {
-        font-size: 12px;
+        font-size: 10px;
       }
     }
     &__future {
       &__paragraphe {
-        font-size: 18px;
+        font-size: 12px;
       }
     }
   }

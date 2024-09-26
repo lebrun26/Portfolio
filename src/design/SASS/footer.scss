@@ -26,6 +26,7 @@
 // Responsive Phone
 @media (max-width: 768px) {
   .footer {
+    gap: 15px;
     &__name {
       font-size: 10px;
     }

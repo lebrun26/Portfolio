@@ -208,6 +208,9 @@ body {
   .container__techno .card {
     width: 26%;
   }
+  .container__techno .card h3 {
+    font-size: 14px;
+  }
 }
 .main__container {
   gap: 25px;
@@ -258,11 +261,14 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .main__container__formation {
+    padding: 0px 8px;
+  }
   .main__container__formation__paragraphe {
-    font-size: 12px;
+    font-size: 10px;
   }
   .main__container__future__paragraphe {
-    font-size: 18px;
+    font-size: 12px;
   }
 }
 .card__presentation {
@@ -321,7 +327,7 @@ body {
     height: 365px;
   }
   .card__presentation .card__presentation__inner__back {
-    font-size: 13px;
+    font-size: 11px;
   }
   .card__presentation .card__presentation__inner__front .title__cards {
     font-size: 36px;
@@ -372,7 +378,7 @@ body {
     width: 24%;
   }
   .main__container h2 {
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 .carousel {
@@ -443,7 +449,7 @@ body {
 }
 @media (max-width: 768px) {
   .carousel__content img {
-    height: 239px;
+    height: 143px;
   }
   .carousel__github img {
     height: 26px;
@@ -595,6 +601,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .footer {
+    gap: 15px;
+  }
   .footer__name {
     font-size: 10px;
   }
